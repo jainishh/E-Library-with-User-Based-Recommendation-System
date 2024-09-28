@@ -1,0 +1,189 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* General Styles for Navbar */
+  .navbar {
+    background-color: white; /* Light background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    font-size: 23px;
+    color: #007bff; /* Blue color */
+    padding: 0 15px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar a:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+  }
+  
+  .navbar .search-bar {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Allows the search bar to grow */
+    justify-content: center; /* Centers the search bar */
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 8px;
+    width: 100%; /* Full width on smaller screens */
+    max-width: 300px; /* Limits the width on larger screens */
+  }
+  
+  .search-bar input[type="submit"] {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .search-bar input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Profile Section */
+  .navbar .profile {
+    background-color: #000; /* Black profile circle */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar .profile a {
+    color: #fff; /* White icon/text inside profile circle */
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* Space between links */
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  }
+  
+  .navbar-links a {
+    margin-left: 20px;
+  }
+  
+  /* Middle Section */
+  .book-row-1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  }
+  .bookname{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #0e121b;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .author{
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #4e6597;
+  }
+  .book12 {
+    height: 250px;
+    width: 160px;
+    border: 20px white solid;
+    border-radius: 30px;
+    transition: transform 0.2s ease-in-out; /* Smooth transition for transform */
+  }
+  
+  .book1 {
+    text-align: center;
+    margin: 10px; /* Adds some margin around the container */
+  }
+  
+  .book1:hover .book12 {
+    transform: scale(1.1); /* Scale the image to 120% on hover */
+  }
+  
+  /* Footer Section */
+   footer{
+    position: sticky;
+    bottom: 0px;
+    background-color: white;
+
+   }
+  .footer-nav{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 2px solid black;
+    height: 60px;
+    align-items: center;
+    
+  }
+  
+  .arr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stacks items vertically on smaller screens */
+    }
+  
+    .navbar .search-bar {
+        width: 100%; /* Full width on smaller screens */
+        margin-top: 10px; /* Adds some margin on top */
+    }
+  
+    .navbar-links {
+        flex-direction: column; /* Stacks links vertically on smaller screens */
+        width: 100%; /* Full width on smaller screens */
+        text-align: center; /* Centers the links */
+    }
+  
+    .navbar-links a {
+        margin: 10px 0; /* Adds margin around links */
+    }
+  
+    .book-row-1 {
+        flex-direction: column; /* Stacks books vertically on smaller screens */
+        align-items: center; /* Centers the books */
+    }
+  
+    .book12 {
+        width: 80%; /* Adjusts the width on smaller screens */
+        height: auto; /* Maintains aspect ratio */
+   }
+  }
+  
+
+
